@@ -42,7 +42,7 @@ const Dashboard: React.FC = () => {
 
     return (
         <div className="dashboard-container">
-            <h1 className="dashboard-title">Dashboard de Consumo</h1>
+            <h1 className="dashboard-title">DASHBOARD DE CONSUMO</h1>
             <div className="card-container">
                 <InvoiceCard title="Consumo total (kWh)" value={`${totals.total_consumption} kWh`} />
                 <InvoiceCard title="Economia Total (R$)" value={`R$ ${parseFloat(totals.total_savings).toFixed(2)}`} />

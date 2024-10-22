@@ -1,42 +1,47 @@
 .invoices-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filters {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
 }
 
 .input-field {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 1rem;
-    margin-top: 5px;
+    font-size: 1.1rem;
 }
 
 .fetch-button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .fetch-button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 .invoices-table {
@@ -45,29 +50,31 @@
     margin-top: 20px;
 }
 
-.invoices-table th,
+.invoices-table th, 
 .invoices-table td {
-    padding: 12px;
+    padding: 15px;
     text-align: left;
     border: 1px solid #ddd;
 }
 
 .invoices-table th {
     background-color: #f2f2f2;
+    font-size: 1.2rem;
 }
 
 .download-button {
-    padding: 6px 12px;
+    padding: 8px 16px;
     background-color: #28a745;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .download-button:hover {
     background-color: #218838;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -77,21 +84,20 @@
 
     .input-group {
         width: 100%;
-        margin-bottom: 10px;
     }
 }
 
 .back-button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #6c757d;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .back-button:hover {
-    background-color: #5a6268; 
+    background-color: #5a6268;
 }

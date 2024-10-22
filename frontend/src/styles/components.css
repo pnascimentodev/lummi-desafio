@@ -1,43 +1,46 @@
 .invoice-card {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .invoice-card h4 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  .invoice-card p {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .client-filter {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .client-filter select, 
-  .client-filter input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .client-filter select {
-    width: 200px;
-  }
-  
-  .client-filter input {
-    width: 150px;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.invoice-card:hover {
+  transform: translateY(-5px);
+}
+
+.invoice-card h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.invoice-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.client-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.client-filter select, 
+.client-filter input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.client-filter select:hover, 
+.client-filter input:hover {
+  border-color: #888;
+}
